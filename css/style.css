@@ -156,6 +156,12 @@ body {
 
 .page__main-block {}
 
+.page__services {
+   /* отрицательный маржин потому как за ним поднимутся все остальные блоки снизу */
+   margin: -111px 0px 0px 0px;
+   position: relative;
+}
+
 /* =========================================footer====================================================== */
 .footer {}
 
@@ -165,13 +171,17 @@ body {
    position: relative;
 }
 
-.main-block__container {}
-
 .main-block__body {
    padding: 184px 0 191px 0;
    position: relative;
    z-index: 2;
    max-width: 400px;
+}
+
+@media (max-width: 992px) {
+   .main-block__body {
+      padding: 120px 0 191px 0;
+   }
 }
 
 /* обращение ко всем объектам первого уровня (>*)  без пробелов иначе не будет результата*/
@@ -189,6 +199,13 @@ body {
    letter-spacing: 0.2px;
 }
 
+@media (max-width: 479px) {
+
+   .main-block__title {
+      font-size: 42px;
+   }
+}
+
 .main-block__text {
    color: #737373;
    font-size: 20px;
@@ -197,8 +214,16 @@ body {
    letter-spacing: 0.2px;
 }
 
+@media (max-width: 479px) {
+   .main-block__text {
+      color: #3f3f3f;
+   }
+}
+
 .main-block__buttons {
-   display: inline-flex;
+   display: flex;
+   flex-wrap: wrap;
+   margin: -10px 0;
 }
 
 
@@ -214,10 +239,27 @@ body {
    font-weight: 700;
    line-height: 150%;
    text-align: center;
+   margin: 10px 0;
+   /* flex: 0 1 50%; */
+}
+
+@media (max-width: 479px) {
+   .main-block__button {
+      /* display: block; */
+      flex: 1 1 100%;
+   }
+}
+
+@media (min-width: 479px) {
+   .main-block__button:not(:last-child) {
+      /* margin: 10px 10px 0px 0px; */
+      margin-right: 10px;
+   }
 }
 
 .main-block__button:not(:last-child) {
-   margin: 0px 10px 0px 0px;
+   /* margin: 10px 10px 0px 0px; */
+   margin-right: 10px;
 }
 
 /* верстка оранжевой кнопки */
@@ -241,11 +283,79 @@ body {
 }
 
 @media(max-width:1300px) {
-   .main-block__image {
+   .main-block__image img {
       object-position: right;
+   }
+}
+
+@media (max-width: 992px) {
+   .main-block__image {
+      opacity: 0.5;
    }
 }
 
 /* .main-block__image img {
    object-position: bottom;
 } */
+/* ======================================service=============================================================== */
+
+.services {}
+
+.services__container {}
+
+.services__body {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0px -15px;
+}
+
+.services__colum {
+   padding: 0 15px;
+   flex: 0 1 33.333%;
+}
+
+.services__item {
+   min-width: 300px;
+   height: 100%;
+   box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+   background: #FFFFFF;
+   padding: 35px;
+
+}
+
+.services__item>*:not(:last-child) {
+   margin: 0px 0px 10px 0px;
+}
+
+.item-service {}
+
+.item-service_green {
+   background: #0D5C63;
+}
+
+.item-service_green .item-service__title {
+   color: #ffff;
+}
+
+.item-service_green .item-service__text {
+   color: #ffff;
+}
+
+.item-service__icon {}
+
+.item-service__title {
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 133%;
+   color: #252B42;
+   letter-spacing: 0.1px;
+}
+
+.item-service__text {
+   color: #737373;
+   line-height: 142%;
+   /* font-weight: 500; */
+   /* font-size: 14px; */
+   letter-spacing: 0.2px;
+
+}
