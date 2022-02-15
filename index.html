@@ -5,17 +5,69 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="./css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900&display=swap"
+			rel="stylesheet" />
+		<!-- при подключении шрифтов необходимо в конце ссылки на шрифты дописать &display=swap -->
+		<link rel="stylesheet" href="css/style.css">
 		<title>Relvise</title>
 	</head>
 
 	<body>
-		<!-- wrapper нужен что б не появлялся горизонтальный скролл при отрицательных отступах -->
-		<!-- его нужно добавлять для внутренней оболочки страницы (не для body) иначе не сможем скролить страницу  -->
+		<!-- wrapper нужен что б не появлялся горизонтальный скролл при отрицательных отступах 
+		его нужно добавлять для внутренней оболочки страницы (не для body) иначе не сможем скролить страницу  -->
 		<div class="wrapper">
+			<header class="header">
+				<!-- шапка -->
+				<div class="header__container _container">
+					<a href="" class="header__logo">Relvise</a>
+					<nav class="header__menu menu">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="" class="menu__link">Home</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Product</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Pricing</a>
+							</li>
+							<li class="menu__item">
+								<a href="" class="menu__link">Contact</a>
+							</li>
+						</ul>
+					</nav>
 
+				</div>
+			</header>
+			<main class="page">
+				<div class="page__main-block main-block">
+					<div class="main-block__container _container">
+						<div class="main-block__body">
+							<h1 class="main-block__title">Finance and Consultancy Solution
+							</h1>
+							<div class="main-block__text">We know how large objects will act,
+								but things on a small scale.</div>
+							<div class="main-block__buttons">
+								<a href="" class="main-block__button main-block__button-orange">Get Quote Now</a>
+								<a href="" class="main-block__button main-block__button-border">Learn More</a>
+							</div>
+						</div>
+					</div>
+					<div class="main-block__image _ibg">
+						<!-- _ibg позволяет делать вставленную картинку фоновым изображением -->
+						<img src="img/background.jpg" alt="cover">
+					</div>
+				</div>
+			</main>
+			<footer class="footer">
+				подвал
+			</footer>
 		</div>
-		<script src="./js/script.js"></script>
+
+		<!-- так как чтение страницы идет с верху вниз  
+		все js файлы подключаются в конце страницы что б они не перегружали страницу и загружалась она быстрее
+		так как считывание js файлов может занять много трафика и времени  -->
+		<script src="js/script.js"></script>
 	</body>
 
 </html>
