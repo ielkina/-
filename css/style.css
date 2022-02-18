@@ -161,7 +161,7 @@ body {
    flex: 1 1 auto;
 }
 
-.page__main-block {}
+/* .page__main-block {} */
 
 .page__services {
    /* отрицательный маржин потому как за ним поднимутся все остальные блоки снизу */
@@ -169,15 +169,18 @@ body {
    position: relative;
 }
 
-.page__advantage {}
+/* .page__advantage {}
 
 .page__practice {}
+
+.page__whoweare {} */
+/* .page__clients {} */
+/* .page__subscride {} */
 
 /* ========================================header block======================================================= */
 .header-block {
    text-align: center;
    letter-spacing: 0.2px;
-
 }
 
 .header-block__title {
@@ -211,7 +214,7 @@ body {
 }
 
 /* =========================================footer====================================================== */
-.footer {}
+/* .footer {} */
 
 /* ==============================================main-block================================================= */
 
@@ -243,8 +246,6 @@ body {
 .main-block__body>*:not(:last-child) {
    margin: 0px 0px 35px 0px;
 }
-
-
 
 .main-block__title {
    font-size: 58px;
@@ -279,7 +280,6 @@ body {
    flex-wrap: wrap;
    margin: -10px 0;
 }
-
 
 /* верстка кнопки стандартная  общие стили блока кнопок шапки*/
 .main-block__button {
@@ -354,11 +354,11 @@ body {
 } */
 /* ======================================service=============================================================== */
 
-.services {}
+/* .services {}
 
 .services__container {}
 
-.services__body {}
+.services__body {} */
 
 @media (min-width: 670px) {
    .services__body {
@@ -381,8 +381,6 @@ body {
    .services__colum {
       padding: 0 15px;
    }
-
-
 }
 
 @media (max-width: 992px) {
@@ -427,7 +425,7 @@ body {
    margin: 0px 0px 10px 0px;
 }
 
-.item-service {}
+/* .item-service {} */
 
 .item-service_green {
    background: #0D5C63;
@@ -441,7 +439,7 @@ body {
    color: #ffff;
 }
 
-.item-service__icon {}
+/* .item-service__icon {} */
 
 .item-service__title {
    font-weight: 700;
@@ -479,7 +477,7 @@ body {
    }
 }
 
-.advantage__container {}
+/* .advantage__container {} */
 
 .advantage__header {
    margin: 0px 0px 40px 0px;
@@ -546,7 +544,7 @@ body {
    letter-spacing: 0.2px;
 }
 
-.advantage__value:not(:last-child) {}
+/* .advantage__value:not(:last-child) {} */
 
 .advantage__text {
    font-size: 16px;
@@ -573,7 +571,7 @@ body {
    }
 }
 
-.practice__container {}
+/* .practice__container {} */
 
 .practice__header {
    margin: 0px 0px 45px 0px;
@@ -595,7 +593,7 @@ body {
    padding: 0px 20px;
    margin: 0px 0px 30px 0px;
    flex: 0 1 25%;
-   transition: 1s;
+   transition: 2s;
 }
 
 .practice__colum:hover {
@@ -614,7 +612,7 @@ body {
    }
 }
 
-.practice__item {}
+/* .practice__item {} */
 
 .item-practice {
    background-color: #fff;
@@ -663,3 +661,226 @@ body {
    display: block;
    padding: 0px 0px 60% 0px;
 }
+
+/* ===============================================who we are=================================================== */
+
+.whoweare {
+   padding: 80px 0px 130px 0px;
+}
+
+/* .whoweare__container {} */
+
+.whoweare__header {
+   margin: 0px 0px 100px 0px;
+}
+
+.whoweare__body {
+   display: flex;
+   align-items: flex-start;
+}
+
+.whoweare__video {
+   flex: 0 0 57%;
+   position: relative;
+   padding: 0px 0px 42.25% 0px;
+}
+
+.whoweare__video iframe {
+   /* занести в снипет */
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   object-fit: cover;
+}
+
+.whoweare__content {
+   flex: 1 1 auto;
+   padding: 20px 0px 0px 121px;
+}
+
+.whoweare__title {
+   font-weight: 800;
+   font-size: 40px;
+   line-height: 142%;
+   letter-spacing: 0.2px;
+   color: #252B42;
+}
+
+.whoweare__title:not(:last-child) {
+   margin: 0px 0px 10px 0px;
+}
+
+.whoweare__text {
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 143%;
+   letter-spacing: 0.2px;
+   color: #737373;
+}
+
+.whoweare__top:not(:last-child) {
+   margin: 0px 0px 50px 0px;
+}
+
+/* .whoweare__text:not(:last-child) {
+   margin: 0px 0px 50px 0px;
+} */
+
+.whoweare__items {
+   margin: 50px 0px 0px 0px;
+}
+
+/* .whoweare__item {} */
+
+.whoweare__item:not(:last-child) {
+   margin: 0px 0px 30px 0px;
+}
+
+.item-whoweare {
+   display: flex;
+}
+
+.item-whoweare__icon {
+   flex: 0 0 32px;
+}
+
+.item-whoweare__body {
+   flex: 1 1 auto;
+   padding: 0px 0px 0px 20px;
+}
+
+.item-whoweare__title {
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 150%;
+   letter-spacing: 0.1px;
+   color: #252B42;
+}
+
+.item-whoweare__title:not(:last-child) {
+   margin: 0px 0px 5px 0px;
+}
+
+.item-whoweare__text {
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 142%;
+   letter-spacing: 0.2px;
+   color: #737373;
+   width: 225px;
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+}
+
+@media (max-width: 1080px) {
+   .whoweare__content {
+      padding: 0px 0px 0px 50px;
+   }
+}
+
+@media (max-width: 950px) {
+   .whoweare {
+      padding: 50px 0px 50px 0px;
+   }
+
+   .whoweare__body {
+      flex-direction: column-reverse;
+      align-items: stretch;
+   }
+
+   .whoweare__title {
+      font-size: 24px;
+   }
+
+   .whoweare__content {
+      padding: 0px 0px 0px 0px;
+   }
+
+   .whoweare__video {
+      padding: 0px 0px 56.25% 0px;
+   }
+
+   .whoweare__video:not(:last-child) {
+      margin: 50px 0px 0px 0px;
+   }
+
+   .whoweare__header {
+      margin: 0px 0px 30px 0px;
+   }
+
+}
+
+@media (max-width: 767px) {
+   .whoweare {
+      padding: 20px 0px 50px 0px;
+   }
+
+   .whoweare__video:not(:last-child) {
+      margin: 30px 0px 0px 0px;
+   }
+
+   .whoweare__top:not(:last-child) {
+      margin: 0px 0px 30px 0px;
+   }
+}
+
+/* ===========================================clients================================================== */
+/* блок сделан дивом а не секцией так как в секцию нужно добавлять заголовки h1 - h6 */
+.clients {
+   padding: 58px 0;
+}
+
+@media (max-width: 768px) {
+   .clients {
+      padding: 30px 0;
+   }
+}
+
+/* .clients__container {} */
+
+.clients__items {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.clients__item {
+   padding: 8px 15px;
+   flex: 0 1 16.6667%;
+   text-align: center;
+   min-width: 140px;
+}
+
+.clients__item img {
+   max-width: 100%;
+}
+
+/* =========================================input==================================================== */
+
+.subscride {}
+
+.subscride__container {}
+
+.subscride__body {
+   display: flex;
+   background: #17213C;
+   border-radius: 2px;
+}
+
+.subscride__title {
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 133%;
+   letter-spacing: 0.1px;
+   color: #FFFFFF;
+}
+
+.subscride__form {}
+
+.subscride__input {}
+
+.subscride__button {}
