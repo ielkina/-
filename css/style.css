@@ -179,6 +179,8 @@ body {
    margin: 0px 0px 10px 0px;
 }
 
+.page__getintouch {}
+
 /* ========================================header block======================================================= */
 .header-block {
    text-align: center;
@@ -897,16 +899,9 @@ body {
    }
 }
 
-@media (min-width: 810px) {
-   .subscride__body {
-      display: flex;
-      justify-content: space-between;
-   }
-}
-
 .subscride__title {
    color: #FFFFFF;
-   max-width: 266px;
+   /* max-width: 266px; */
    line-height: 133%;
    font-weight: 700;
    font-size: 24px;
@@ -919,7 +914,19 @@ body {
    }
 
    .subscride__body {
+      margin: 0px -15px;
       padding: 20px 25px;
+   }
+}
+
+@media (min-width: 810px) {
+   .subscride__body {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .subscride__title {
+      max-width: 266px;
    }
 }
 
@@ -930,6 +937,7 @@ body {
 }
 
 .subscride__input {
+   width: 100%;
    flex: 1 1 auto;
    min-height: 58px;
    background: #F9F9F9;
@@ -957,3 +965,37 @@ body {
    text-align: center;
    padding: 0 22px;
 }
+
+@media (max-width: 810px) {
+   .subscride__button {
+      padding: 0 15px;
+   }
+
+   .subscride__input {
+      padding: 0 15px;
+   }
+}
+
+/* =======================================getintouch============================================== */
+
+.getintouch {}
+
+.getintouch__container {}
+
+.getintouch__header {}
+
+.getintouch__items {}
+
+.getintouch__item {}
+
+.item-getintouch {}
+
+.item-getintouch__icon {}
+
+.item-getintouch__emails {}
+
+.item-getintouch__email {}
+
+.item-getintouch__label {}
+
+.item-getintouch__button {}
